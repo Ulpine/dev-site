@@ -69,13 +69,13 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-        .portfolio-image::after {
+        /* .portfolio-image::after {
             content: '🚀';
             position: absolute;
             font-size: 8rem;
             opacity: 0.1;
             animation: float 10s infinite ease-in-out;
-        }
+        } */
 
         .portfolio-content {
             padding: 1.5rem;

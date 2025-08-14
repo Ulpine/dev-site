@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(135deg, var(--secondary-color), #68d391);
+    background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
     border-radius: 16px;
     padding: 3rem;
     color: white;
@@ -24,6 +24,7 @@
 
 .shop-content {
     flex: 1 1 400px; /* Prend l’espace disponible */
+    text-align: center; /* Texte centré pour le contenu principal */
 }
 
 .shop-content h2,
@@ -91,15 +92,22 @@
             margin-bottom: 2rem;
         }
 
-        .btn-shop {
-            background: white;
-            color: var(--secondary-color);
-            padding: 15px 40px;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
+.btn-shop {
+    display: inline-block;
+    padding: 12px 28px; /* similaire aux autres boutons */
+    font-size: 1rem;     /* même taille que primary/secondary */
+    background: white;
+    color: var(--primary-color);
+    border-radius: 8px;  /* arrondi cohérent */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%;     /* pour rester responsive */
+    text-align: center;
+    transition: all 0.3s ease;
+}
 
-        .btn-shop:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
-        }
+.btn-shop:hover {
+    background: var(--accent-color); /* turquoise clair */
+    color: white;
+    transform: translateY(-2px) scale(1.05); /* léger ajustement pour équilibre */
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.4);
+}
