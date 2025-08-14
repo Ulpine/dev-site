@@ -1,0 +1,105 @@
+        /* ========================================
+           BOUTIQUE SECTION
+           ======================================== */
+        #boutique {
+            background: var(--bg-white);
+            text-align: center;
+        }
+
+.shop-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, var(--secondary-color), #68d391);
+    border-radius: 16px;
+    padding: 3rem;
+    color: white;
+    box-shadow: var(--shadow-xl);
+    position: relative;
+    overflow: hidden;
+    text-align: left; /* Texte à gauche */
+    gap: 2rem;
+    flex-wrap: wrap; /* Pour que ça reste responsive */
+}
+
+.shop-content {
+    flex: 1 1 400px; /* Prend l’espace disponible */
+}
+
+.shop-content h2,
+.shop-content h3 {
+    color: white;
+}
+.shop-content p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.shop-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.shop-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.centered-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.centered-btn {
+    display: block;
+    margin: 2rem auto 0 auto; /* centre horizontalement avec un peu d’espace au-dessus */
+}
+
+
+        .shop-banner::before,
+        .shop-banner::after {
+            content: '🛍️';
+            position: absolute;
+            font-size: 8rem;
+            opacity: 0.1;
+        }
+
+        .shop-banner::before {
+            top: -2rem;
+            left: -2rem;
+            transform: rotate(-15deg);
+        }
+
+        .shop-banner::after {
+            bottom: -2rem;
+            right: -2rem;
+            transform: rotate(15deg);
+        }
+
+        .shop-banner h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .shop-banner p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-shop {
+            background: white;
+            color: var(--secondary-color);
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-shop:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+        }
